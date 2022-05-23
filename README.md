@@ -8,7 +8,7 @@ This repository is an implementation of the following paper:
 
 Xu, J; Yang, Y; Wang, C; Liu, Z; Zhang, J; Chen, L and Lu, J, Robust Network Enhancement from Flawed Networks, IEEE Transactions
 on Knowledge and Data Engineering, 2020. 
-[<a href="works/tkde2021_netrl_xu.pdf">PDF</a>]
+[<a href="https://galina0217.github.io/works/enet/tkde2020_robust_xu.pdf">PDF</a>]
 
 ```
 @article{xu2020robust,
