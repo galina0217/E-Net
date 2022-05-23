@@ -68,26 +68,26 @@ The help information of the main script ```Enet/Main.py``` is listed as follows:
       -h, --help                show this help message and exit
       --data-name               str, select the dataset. 
       --save-name               str, the name of saved model. 
-      --max-train-num           int, the maximum number of training links.
-      --no-cuda                 bool, whether to disables CUDA training.
-      --seed                    int, set the random seed.
-      --test-ratio              float, the ratio of test links.
-      --missing-ratio           float, the ratio of missing links.
-      --split-ratio             str, the split rate of train, val and test links
-      --neg-pos-ratio           float, the ratio of negative/positive links
-      --use-attribute           bool, whether to utilize node attribute. 
-      --use-embedding           bool, whether to utilize the information from node2vec node embeddings.
-      --embedding-size          int, the embedding size of node2vec
-      --lazy-subgraph           bool, whether to use lazy subgraph extraction.
-      --max-nodes-per-hop       int, the upper bound the number of nodes per hop when performing Lazy Subgraph Extraction. 
-      --num-walks               int, thenumber of walks for each node when performing Lazy Subgraph Extraction. 
-      --multi-subgraph          int, the number of subgraphs to extract for each queried nodes
-      --reg-smooth              bool, whether to use auxiliary denoising regularization.
-      --smooth-coef             float, the coefficient of auxiliary denoising regularization. 
-      --trainable-noise         bool, whether to let the Noisy link detection layer trainable.
-      --early-stop              bool, whether to use early stopping.
-      --early-stop-patience     int, the patience for early stop.
-      --learning-rate           float, the learning rate. 
+      --max-train-num           int, the maximum number of training links, default 100000.
+      --no-cuda                 bool, whether to disables CUDA training, default False.
+      --seed                    int, set the random seed, default 1.
+      --test-ratio              float, the ratio of test links, default 0.1.
+      --missing-ratio           float, the ratio of missing links, default 0.1.
+      --split-ratio             str, the split rate of train, val and test links, default 0.8,0.1,0.1.
+      --neg-pos-ratio           float, the ratio of negative/positive links, default 5.
+      --use-attribute           bool, whether to utilize node attribute, default True. 
+      --use-embedding           bool, whether to utilize the information from node2vec node embeddings, default False.
+      --embedding-size          int, the embedding size of node2vec, default 128.
+      --lazy-subgraph           bool, whether to use lazy subgraph extraction, default True.
+      --max-nodes-per-hop       int, the upper bound the number of nodes per hop when performing Lazy Subgraph Extraction, default 20.
+      --num-walks               int, thenumber of walks for each node when performing Lazy Subgraph Extraction, default 5.
+      --multi-subgraph          int, the number of subgraphs to extract for each queried nodes, default 3.
+      --reg-smooth              bool, whether to use auxiliary denoising regularization, default False.
+      --smooth-coef             float, the coefficient of auxiliary denoising regularization, default 1e-4.
+      --trainable-noise         bool, whether to let the Noisy link detection layer trainable, default False.
+      --early-stop              bool, whether to use early stopping, default True. 
+      --early-stop-patience     int, the patience for early stop, default 7. 
+      --learning-rate           float, the learning rate, default 1e-4. 
 
 To reproduce the results that reported in the paper, you can run the following command.
 
