@@ -4,7 +4,21 @@ Robust Network Enhancement from Flawed Networks
 About
 -----
 
-This project implements the E-net model, which focuses on reconstructing a reliable network from a flawed (noisy) network.
+This repository is an implementation of the following paper:
+
+Xu, J; Yang, Y; Wang, C; Liu, Z; Zhang, J; Chen, L and Lu, J, Robust Network Enhancement from Flawed Networks, IEEE Transactions
+on Knowledge and Data Engineering, 2020. 
+[<a href="works/tkde2021_netrl_xu.pdf">PDF</a>]
+
+```
+@article{xu2020robust,
+  title={Robust Network Enhancement from Flawed Networks},
+  author={Xu, Jiarong and Yang, Yang and Wang, Chunping and Liu, Zongtao and Zhang, Jing and Chen, Lei and Lu, Jiangang},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2020},
+  publisher={IEEE}
+}
+```
 
 Dependencies
 -----
@@ -81,17 +95,3 @@ To reproduce the results that reported in the paper, you can run the following c
     --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
     
 
-## Reference
-
-[1] Xu, J; Yang, Y; Wang, C; Liu, Z; Zhang, J; Chen, L and Lu, J, Robust Network Enhancement from Flawed Networks, IEEE Transactions
-on Knowledge and Data Engineering, 2020.
-
-```
-@article{xu2020robust,
-  title={Robust Network Enhancement from Flawed Networks},
-  author={Xu, Jiarong and Yang, Yang and Wang, Chunping and Liu, Zongtao and Zhang, Jing and Chen, Lei and Lu, Jiangang},
-  journal={IEEE Transactions on Knowledge and Data Engineering},
-  year={2020},
-  publisher={IEEE}
-}
-```
