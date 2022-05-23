@@ -89,7 +89,7 @@ The help information of the main script ```Enet/Main.py``` is listed as follows:
       --early-stop-patience     int, the patience for early stop.
       --learning-rate           float, the learning rate. 
 
-To reproduce the results that reported in the paper, you can run the following command:
+To reproduce the results that reported in the paper, you can run the following command.
 
 - To train the variant E-Net(n)
 ```bash
