@@ -93,25 +93,25 @@ To reproduce the results that reported in the paper, you can run the following c
 
 - To train the variant E-Net(n)
 ```bash
-python Main.py --data-name citeseer --use-embedding --num-walks 5 --learning-rate 1e-4 
+python Main.py --data-name cora --use-embedding --num-walks 5 --learning-rate 1e-4 
  --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
 ```
 
 - To train the variant E-Net(fix)
 ```bash
-python Main.py --data-name citeseer --num-walks 5 --learning-rate 1e-4
+python Main.py --data-name cora --num-walks 5 --learning-rate 1e-4
 --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4
 ```
 
 - To train the variant E-Net(s-)
 ```bash
-python Main.py --data-name citeseer --num-walks 5 --learning-rate 1e-4 
+python Main.py --data-name cora --num-walks 5 --learning-rate 1e-4 
 --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
 --smooth-coef 0
 ```
 
 - To train the variant E-Net
 ```bash
-python Main.py --data-name citeseer --num-walks 5 --learning-rate 1e-4 
+python Main.py --data-name cora --num-walks 5 --learning-rate 1e-4 
 --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
 ```
