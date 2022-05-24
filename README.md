@@ -57,6 +57,8 @@ How to run E-net
 -----
 The help information of the main script ```Enet/Main.py``` is listed as follows:
 
+    cd Enet
+    
     python Main.py -h
     
     usage: Main.py [-h][--data-name] [--save-name] [--max-train-num] [--no-cuda] [--missing-ratio] 
